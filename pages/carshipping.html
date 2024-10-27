@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarShipping</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="carshipping.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+  <style>
+    table tbody td,
+    table tbody th {
+      border: 2px solid #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .text-center {
+        max-width: 100%;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+      .mob_cards {
+        margin: 0 30px;
+      }
+    }
+
+    @media (max-width: 568px) {
+      table {
+        width: 80%;
+        font-size: 0.6rem;
+      }
+
+      th,
+      td {
+        padding: 0.4rem;
+      }
+
+      .hero_section {
+        height: 130vh !important;
+      }
+
+      .hero_content {
+        max-width: 90%;
+      }
+
+      .text-md-start {
+        margin-left: 20px !important;
+      }
+
+      .hero_title {
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+      }
+
+      .hero_bg {
+        margin-top: -80px !important;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .ship_hr {
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+      }
+
+      .ship_btn {
+        width: 40% !important;
+      }
+
+      .hero_section {
+        height: 100vh !important;
+      }
+
+      .hero_content {
+        max-width: 80%;
+      }
+
+      .text-md-start {
+        margin-left: 80px !important;
+      }
+
+      .hero_title {
+        font-size: 2rem !important;
+        font-weight: bold !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="top_header"></div>
+
+  <div id="header"></div>
+
+  <!-- Hero -->
+  <section class="py-md-20 py-12 hero_section" style="position: relative; overflow: hidden; height: 80vh;">
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 hero_content">
+      <div class="row hero_bg">
+        <div class="col-xl-6 col-lg-6 col-md-12 hero_content" style="margin-top: 120px;">
+          <div class="mb-4 mb-xl-0 text-center text-md-start">
+            <h1 class="text-light font-weight-bold hero_title">
+              Ship a Car to Another State
+            </h1>
+            <h6 class="text-white mt-4 mobile-center-text">Ship your car securely from one state to another with a
+              trustworthy auto shipper and avail 100% auto transport insurance coverage. Get Started now!</h6>
+          </div>
+        </div>
+        <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12" style="margin-bottom: 120px;">
+          <div class="card smooth-shadow-md border-0" style="z-index: 1;">
+            <div class="card-body p-6" style="background-color: black;">
+              <div class="form-items">
+                <h6 class="text-primary text-center">Get instant Quote</h6>
+                <h6 class="text-white text-center"><i class="bi bi-telephone-forward-fill text-primary"></i> 1(780)
+                  550-1515</h6>
+                <div style="width: 100%; height: 1px; background-color: white; margin: 10px 0;"></div>
+                <form class="requires-validation" novalidate>
+                  <h6 class="text-white text-center">MOVING FROM</h6>
+                  <h6 class="text-white text-center">WHERE ARE YOU MOVING FROM?</h6>
+                  <div class="col-md-12">
+                    <input class="form-control" type="text" name="city_from" placeholder="Enter City or Zip" required>
+                  </div>
+                  <h6 class="text-white text-center mt-2">MOVING TO</h6>
+                  <h6 class="text-white text-center">WHERE ARE YOU MOVING TO?</h6>
+                  <div class="col-md-12 mt-3">
+                    <input class="form-control" type="text" name="city_to" placeholder="Enter City or Zip" required>
+                  </div>
+                  <div class="form-button mt-3 text-center">
+                    <button id="submit" type="submit" class="btn text-white rounded"
+                      style="background-color: #f31f1f;">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cards"></div>
+
+  <section style="background-color: #F9F9F9; padding-top: 0; padding-bottom: 0;">
+    <div class="container mobile-width">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./assets/Car Shipping img/car-transporter.png" alt="Mobile Home Transport"
+            class="img-fluid img-mobile" style="height: 100%; width: 100%;">
+        </div>
+        <div class="col-md-6" style="padding-top: 30px;">
+          <h6 class="font-weight-bold" style="font-size: 1.2rem;">Ship A Car To Another State</h6>
+          <h6 class="font-weight-bold text-primary" style="font-size: 1.2rem;">Made Safe and Easy</h6>
+          <hr class="mb-3 bg-primary ship_hr"
+            style="width: 35%; text-align: left; margin: 0; border: none; height: 5px;">
+          <small style="font-size: 0.8rem; line-height: 0.8;">It’s an adventure to move from place to place, but
+            transporting a car is an easy deal for a short journey. In the case of a long trip, it is quite complex and
+            something different. If you want to transport a car from the East Coast to the West Coast, or if you are
+            preparing to transport to a neighboring state or across multiple states, it requires research and planning
+            for a secure move. This is a thorough guide to understand and follow the things you should know before
+            shipping a car to other states.</small>
+          <div class="mt-3">
+            <a href="#" class="btn btn-primary font-weight-bold bg-primary mx-1 ship_btn">Auto Transport Quote!</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container d-flex align-items-center justify-content-center full-height mt-5 mb-5">
+      <div class="text-center width" style="max-width: 70%;">
+        <h5 class=" font-weight-bold" style="width: 70%; margin: 0 auto;">Why Choose Us for <span
+            class="text-primary">State-to-State Car Shipping?</span></h5>
+        <p>When it comes to car transport services from state to state, our dedication to ensuring a smooth and secure
+          transportation experience sets us apart. Here’s why you should opt for our services:</p>
+        <hr class="mb-3 bg-primary" style="width: 35%; margin: 0 auto; border: none; height: 5px;">
+      </div>
+    </div>
+    <div class="container mt-4 d-flex justify-content-center">
+      <div class="row justify-content-center" style="max-width: 90%;">
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circle text-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2714.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary">Choose Auto Transport</h5>
+              <small class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">The first
+                step to stress-free state-to-state car shipping is finding a reputable auto transport company.
+                Explore the real-time ratings and reviews of auto transport companies to get the best shipping
+                services.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circletext-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2708.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary">Book your order</h5>
+              <small class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">Once
+                you've chosen a reliable auto transport company, take your time. Plan and book your transportation well
+                in advance. This helps you secure a spot with your preferred carrier and allows for better scheduling,
+                reducing the chances of delays.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2713.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary mb-0"> Shipping Options</h5>
+              <small class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">There are
+                two shipping options in auto transportation both have their pros and cons, enclosed auto transport and
+                open auto transport. Consider your vehicle's value and budget when choosing the right option that
+                fulfills your requirements.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2718.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary mb-0">Insurance Coverage</h5>
+              <small class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">auto
+                transport companies carry insurance, it's essential to understand their coverage and consider additional
+                insurance. Verify the insurance details, and if you have While reputable any doubts, consult with the
+                shipping company to clarify the scope and liabilities.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2711.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary mb-0">Pickup and Delivery</h5>
+              <small class="card-text"
+                style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">Flexibility with pickup and
+                delivery locations can contribute significantly to a smooth shipping process. Consider meeting the
+                carrier at a nearby location that is easily accessible, reducing the chances of delays due to logistical
+                challenges.</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-4">
+          <div class="card text-center bg-white rounded border-0">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center mb-4"
+                style="width: 40px; height: 40px; margin: 0 auto;">
+                <img src="./assets/Car Shipping img/Frame 2717.png" alt="" style="height: auto; width: 40px;">
+              </div>
+              <h5 class="card-title text-primary mb-0">Inspection at Delivery</h5>
+              <small class="card-text" style="overflow: hidden; text-overflow: ellipsis; white-space: normal;">When your
+                vehicle reaches its delivery origin, do a deep inspection before signing the bill of lading and
+                releasing of driver. If there are any new starches or dots, or there’s any other issue, make quick
+                contact with the company to resolve the issue.</small>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <a href="#" class="btn btn-primary font-weight-bold bg-primary mx-1">Ship Vehicle to Another State</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position: relative; padding: 50px 0; overflow: hidden;">
+    <img src="./assets/Car Shipping img/pngwing.png" alt="Car Shipping"
+      style="position: absolute; top: 0; left: 50%; transform: translateX(-50%) rotate(-70deg) scale(0.8); width: auto; height: auto; min-width: 100%; min-height: 100%; z-index: -1; opacity: 0.7;">
+    <div class="container d-flex align-items-center justify-content-center full-height mt-5 mb-5">
+      <div class="text-center width" style="max-width: 50%;">
+        <h5 class=" font-weight-bold text-primary" style="width: 70%; margin: 0 auto;">Cost to Ship a Car <span
+            class="text-dark">to Another State</span></h5>
+        <p class="mt-3 mb-3">Cost is mainly s affected by distance along with location pickup to delivery, if the car is
+          shipping from terminal to terminal, the graph of shipping costs will show a downward slope but if vehicle
+          pickup and delivery or one of any congested area costs will show an upward move.</p>
+        <table class="table table-striped">
+          <thead>
+            <tr class="bg-primary text-white">
+              <th scope="col">Pickup</th>
+              <th scope="col">Delivery</th>
+              <th scope="col">Open Transport</th>
+              <th scope="col">Enclosed Transport</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-primary">Maryland</th>
+              <td class="text-primary">Maryland</td>
+              <td>$600 - $1800</td>
+              <td>$900 - $2100</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">New York</th>
+              <td class="text-primary">Washington</td>
+              <td>$300 - $1000</td>
+              <td>$700 - $1600</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Delaware</th>
+              <td class="text-primary">New Jersey</td>
+              <td>$1500 - $2000</td>
+              <td>$1700 - $3500</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Delaware</th>
+              <td class="text-primary">Idah</td>
+              <td>$400 - $1200</td>
+              <td>$700 - $160</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">California</th>
+              <td class="text-primary">Texas</td>
+              <td>$800 - $1600</td>
+              <td>$1200 - $2100</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Mississippi</th>
+              <td class="text-primary">New Mexico</td>
+              <td>$600-$1500</td>
+              <td>$1000 - $190</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Virginia</th>
+              <td class="text-primary">Colorado</td>
+              <td>$700 - $1600</td>
+              <td>$1100 - $1900</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Connecticut</th>
+              <td class="text-primary">Pennsylvania</td>
+              <td>$300 - $900</td>
+              <td>$500 - $1300</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Orlando</th>
+              <td class="text-primary">Atlanta</td>
+              <td>$300 - $900</td>
+              <td>$700 - $1600</td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-primary">Illinois</th>
+              <td class="text-primary">California</td>
+              <td>$895</td>
+              <td>$600 - $1800</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="container d-flex align-items-center justify-content-center full-height mt-5 mb-5">
+      <div class="text-center width" style="max-width: 80%;">
+        <h5 class=" font-weight-bold" style="width: 70%; margin: 0 auto;">How Long Does <span class="text-primary">It
+            Take to Ship a Car State to Another State?
+          </span></h5>
+        <p class="mt-3 mb-3">Every state of the USA has its own rules and regulations for road auto transport. If you
+          are in California vehicle code has a clear order that no vehicle may surpass 80,000 lbs. of weight limit. but
+          if you are in Kansas the maximum weight limit is 85,000 lbs. Every state has its regulations for auto
+          transport and every road has a weight limit that should not be exceeded.  Sometimes, the legal requirements to
+          move from one state to another are different a need permit can decrease the shipping duration. If the vehicle
+          is moving from a commercial area or it’s a terminal shipping the time to ship a car will be low for the same
+          distance as compared to shipping a car to/from a school or residential area. Some other auto transport
+          influencers factors have also a deep impact on shipping duration; some of these are weather, season, and
+          method of transportation, whether it is open or enclosed transport, and the</p>
+        <div style="text-align: center;">
+          <table class="table table-striped" style="width: 60%; margin: 0 auto;">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th scope="col">Pickup</th>
+                <th scope="col">Delivery</th>
+                <th scope="col">Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-primary">Est. Coast</th>
+                <td class="text-primary">West Cost</td>
+                <td>7-11 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">North Coast</th>
+                <td class="text-primary">South Coast</td>
+                <td>5-8 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Alaska</th>
+                <td class="text-primary">Florida</td>
+                <td>3-5 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Kansas</th>
+                <td class="text-primary">Georgia</td>
+                <td>4-6 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Mississippi</th>
+                <td class="text-primary">Nebraska</td>
+                <td>2-4 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Maine</th>
+                <td class="text-primary">Idaho</td>
+                <td>5-7 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Kentucky</th>
+                <td class="text-primary">Illinois</td>
+                <td>2-4 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Indiana</th>
+                <td class="text-primary">Lowa</td>
+                <td>3-6 days</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-primary">Alabama</th>
+                <td class="text-primary">Illinois</td>
+                <td>2-4 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section
+    style="background-image: url('./assets/Car Shipping img/Group 180.png'); background-size: cover; background-position: center; padding: 50px 0;">
+    <div class="container d-flex align-items-center justify-content-center full-height mt-5 mb-5">
+      <div class="text-center width text-white" style="max-width: 70%; padding: 20px; border-radius: 10px;">
+        <p>Ready to ship your car across state lines with us?</p>
+        <h1 class="font-weight-bold text-white mb-3" style="width: 100%; margin: 0 auto;">Get an instant quote or call
+          us at</h1>
+        <div style="background-color: white; border-radius: 50px; display: inline-block; width: 30px; height: 30px;">
+          <img src="./assets/Car Shipping img/Group (1).png" alt="" style="margin-top: 5px;">
+        </div>
+        <span>+18005501515</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-4 mb-4 mob_cards">
+          <div class="card h-100 text-center border-1" style="background-color: #F9F9F9;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h4 class="font-weight-bold">Philip Quartey</h4>
+                <div class="d-flex flex-column align-items-end">
+                  <img src="./assets/Car Shipping img/facebook.svg.png"
+                    style="width: 60px; height: auto; margin-bottom: 2px;">
+                  <div>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <small class="card-text flex-grow-1" style="text-align: left;">These guys transported my motorcycle from
+                NC to PA. They were very professional and attentive. I worked with Adam and he was great. We had an
+                issue where the first driver had a breakdown. It did not matter. They had a new driver dispatched within
+                a few hours and the transport was seamless. I have found my company if I ever need to transport
+                again.</small>
+              <small style="text-align: left;">Jan 03, 2024</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 mb-4 mob_cards">
+          <div class="card h-100 text-center border-1" style="background-color: #F9F9F9;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h4 class="font-weight-bold">Della Peacock</h4>
+                <div class="d-flex flex-column align-items-end">
+                  <img src="./assets/Car Shipping img/google.svg fill.png"
+                    style="width: 60px; height: auto; margin-bottom: 2px;">
+                  <div>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <small class="card-text flex-grow-1" style="text-align: left;">We have done multiple shipments with all
+                state to state auto transport. Adam is our guy and we always use him for our shipments. Very
+                professional and provide best prices as compare to the other transport companies. Highly
+                recommended.</small>
+              <small style="text-align: left;">Sep 12, 2024</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 mb-4 mob_cards">
+          <div class="card h-100 text-center border-1" style="background-color: #F9F9F9;">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h4 class="font-weight-bold">Jessie</h4>
+                <div class="d-flex flex-column align-items-end">
+                  <img src="./assets/Car Shipping img/google.svg fill.png"
+                    style="width: 60px; height: auto; margin-bottom: 2px;">
+                  <div>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                  </div>
+                </div>
+              </div>
+              <small class="card-text flex-grow-1" style="text-align: left;">I’ve used this transport company for many
+                years and always received the best and most reliable service with no issues whatsoever. Daniel Willis
+                and his team are the best in the business hands down! Best prices and best delivery time. Don’t hesitate
+                to use them to transport your vehicle.</small>
+              <small style="text-align: left;">July 16, 2024</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row mb-5" style="max-width: 80%; margin: 0 auto;">
+        <div class="text-center" style="max-width: 70%; margin: 0 auto;">
+          <h5 class="font-weight-bold" style="width: 100%; margin: 0 auto;">Frequently Asked <span
+              class="text-primary">Questions</span></h5>
+          <hr class="mt-4 mb-3 bg-primary" style="width: 45%; margin: 0 auto; border: none; height: 5px;">
+        </div>
+        <div class="accordion" id="accordionExample" style="width: 100%; text-align: left; margin: 0 auto;">
+          <div class="accordion_card">
+            <div id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link w-100 d-flex justify-content-between align-items-center"
+                  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                  id="toggleButton" style="outline: none; box-shadow: none; text-decoration: none;">
+                  <span>How to prepare my car for state-to-state shipping?</span>
+                  <i class="bi bi-chevron-down text-dark iconDown"></i>
+                  <i class="bi bi-chevron-up text-dark iconUp" style="display: none;"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Wash your vehicle to clean it from the outside and inside and remove your Stuff from the vehicle.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion_card">
+            <div id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link w-100 d-flex justify-content-between align-items-center"
+                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                  id="toggleButton" style="outline: none; box-shadow: none; text-decoration: none;">
+                  <span>Does All State-to-State Auto Transport move an inoperable car from one State to another
+                    state?</span>
+                  <i class="bi bi-chevron-down text-dark iconDown"></i>
+                  <i class="bi bi-chevron-up text-dark iconUp" style="display: none;"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <p>Yes, All-State transport operable and inoperable vehicles from state to state. Our carrier has types
+                  of equipment and experience to load, offload, and ship inoperable vehicles from state to state.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4" style="height: 100%;">
+          <img src="./assets/Car Shipping img/pngwing.com (7) 1.png" class="img-fluid"
+            style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const components = [
+        { url: '../layout/header.html', targetId: 'top_header' },
+        { url: '../layout/navbar.html', targetId: 'header' },
+        { url: '../layout/footer.html', targetId: 'footer' },
+        { url: '../layout/cards.html', targetId: 'cards' }
+      ];
+
+      const fetchComponent = ({ url, targetId }) => {
+        return fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+            }
+            return response.text();
+          })
+          .then(data => {
+            document.getElementById(targetId).innerHTML = data;
+          })
+          .catch(error => {
+            console.error('Fetch error:', error);
+          });
+      };
+
+      const fetchAllComponents = async () => {
+        for (const component of components) {
+          await fetchComponent(component);
+        }
+      };
+
+      fetchAllComponents();
+    });
+  </script>
+  <script>
+    const buttons = document.querySelectorAll('.btn-link');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        buttons.forEach(btn => {
+          const iconDown = btn.querySelector('.iconDown');
+          const iconUp = btn.querySelector('.iconUp');
+          if (btn !== this) {
+            iconDown.style.display = 'block';
+            iconUp.style.display = 'none';
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+        const iconDown = this.querySelector('.iconDown');
+        const iconUp = this.querySelector('.iconUp');
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          iconDown.style.display = 'block';
+          iconUp.style.display = 'none';
+        } else {
+          iconDown.style.display = 'none';
+          iconUp.style.display = 'block';
+        }
+        this.setAttribute('aria-expanded', !isExpanded);
+      });
+    });
+  </script>
+</body>
+
+</html>
