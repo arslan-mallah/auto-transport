@@ -27,7 +27,44 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+<style>
+.navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.navmenu li {
+    position: relative;
+}
+
+.navmenu .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+.navmenu li:hover .dropdown {
+    display: block;
+}
+
+.navmenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navmenu .dropdown a {
+    padding: 10px 20px;
+}
+
+
+</style>
 </head>
 
 <body class="index-page">
@@ -49,23 +86,39 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="">Our Service</a></li>
-          <li><a href="">How it Works</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="./pages/homemover.html">HomeMover</a></li>
-          <button class="btn btn-danger text-white rounded">
-            <span>Get a Quote</span>
-          </button>
+            <li><a href="" class="active">Home</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle">Our Services</a>
+                <ul class="dropdown">
+                  <li><a href="./pages/homemover.html">Home Mover</a></li>
+                  <li><a href="./pages/carshipping.html">Car Shipping</a></li>
+                  <li><a href="./pages/trucktransport.html">Truck Transport</a></li>
+                  <li><a href="./pages/containertransport.html">Container Transport</a></li>
+                  <li><a href="./pages/howtoship.html">How to Ship</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle">How it Works</a>
+                <ul class="dropdown">
+                    <li><a href="">Step 1</a></li>
+                    <li><a href="">Step 2</a></li>
+                    <li><a href="">Step 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <button class="btn btn-danger text-white rounded">
+                <span>Get a Quote</span>
+            </button>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    </nav>
+
     </div>
   </header>
 
-  <header id="header" class="header d-flex align-items-center">
+  <!-- <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -78,7 +131,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
     </div>
-  </header>
+  </header> -->
 
   <main class="main">
     <section class="py-md-20 py-12 hero_section" style="position: relative; overflow: hidden; height: 100vh;">
@@ -866,6 +919,30 @@
         });
       });
     });
+  </script>
+  <script>
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+dropdowns.forEach(dropdown => {
+    const toggle = dropdown.previousElementSibling;
+
+    toggle.addEventListener('mouseenter', () => {
+        dropdown.style.display = 'block';
+    });
+
+    dropdown.addEventListener('mouseenter', () => {
+        dropdown.style.display = 'block';
+    });
+
+    toggle.addEventListener('mouseleave', () => {
+        dropdown.style.display = 'none';
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+        dropdown.style.display = 'none';
+    });
+});
+
   </script>
 </body>
 
