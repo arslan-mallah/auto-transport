@@ -109,7 +109,7 @@
 
   <!-- Hero -->
   <section class="py-md-20 py-12 hero_section" style="position: relative; overflow: hidden; height: 80vh;">
-    <div class="background-image"></div>
+    <div class="background-image" style="background-image: url('./assets/Car shipping img/Container.png')"></div>
     <div class="overlay"></div>
     <div class="container d-flex justify-content-center align-items-center min-vh-100 hero_content">
       <div class="row hero_bg">
@@ -621,40 +621,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const components = [
-        { url: '../layout/header.html', targetId: 'top_header' },
-        { url: '../layout/navbar.html', targetId: 'header' },
-        { url: '../layout/footer.html', targetId: 'footer' },
-        { url: '../layout/cards.html', targetId: 'cards' }
-      ];
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const components = [
+          { url: '../layout/header.html', targetId: 'top_header' },
+          { url: '../layout/navbar.html', targetId: 'header' },
+          { url: '../layout/footer.html', targetId: 'footer' },
+          { url: '../layout/cards.html', targetId: 'cards' }
+        ];
 
-      const fetchComponent = ({ url, targetId }) => {
-        return fetch(url)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
-            }
-            return response.text();
-          })
-          .then(data => {
-            document.getElementById(targetId).innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Fetch error:', error);
-          });
-      };
+        const fetchComponent = ({ url, targetId }) => {
+          return fetch(url)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+              }
+              return response.text();
+            })
+            .then(data => {
+              document.getElementById(targetId).innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Fetch error:', error);
+            });
+        };
 
-      const fetchAllComponents = async () => {
-        for (const component of components) {
-          await fetchComponent(component);
-        }
-      };
+        const fetchAllComponents = async () => {
+          for (const component of components) {
+            await fetchComponent(component);
+          }
+        };
 
-      fetchAllComponents();
-    });
-  </script>
+        fetchAllComponents();
+      });
+    </script>
   <script>
     const buttons = document.querySelectorAll('.btn-link');
 

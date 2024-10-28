@@ -73,3 +73,73 @@
 }
 
 }
+
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  /* background-image: url('./assets/Car shipping img/Container.png'); */
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    background-image: url('./assets/Car shipping img/Container.png');
+  }
+}
+
+@media (max-width: 568px) {
+
+  .hero_section {
+    height: 130vh !important;
+  }
+
+  .hero_content {
+    max-width: 90%;
+  }
+
+  .text-md-start {
+    margin-left: 20px !important;
+  }
+
+  .hero_title {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+  }
+
+  .hero_bg {
+    margin-top: -80px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ship_hr {
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ship_btn {
+    width: 40% !important;
+  }
+
+  .hero_section {
+    height: 100vh !important;
+  }
+
+  .hero_content {
+    max-width: 80%;
+  }
+
+  .text-md-start {
+    margin-left: 80px !important;
+  }
+
+  .hero_title {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+  }
+}
