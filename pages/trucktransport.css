@@ -38,10 +38,16 @@
     margin: 0 10px !important;
 }
 .line {
-    width: 30px !important;
+    width: 75px !important;
+    margin-left: -10px !important;
 }
 .line1 {
-  width: 60px !important;
+  width: 75px !important;
+  margin-left: 15px !important;
+}
+
+.rounded-circle {
+  margin-left: 25px !important;
 }
 }
 
@@ -54,6 +60,13 @@
   .line1 {
     width: 195px !important;
   }
+  .line2 {
+    margin-left: -18px !important;
+  }
+
+.center{
+  margin-left: -15px !important;
+}
 
   .icon_text {
     width: 100% !important;

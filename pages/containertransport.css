@@ -74,7 +74,6 @@
 
 }
 
-
 .background-image {
   position: absolute;
   top: 0;
@@ -82,7 +81,6 @@
   width: 100%;
   height: 100%;
   z-index: -2;
-  /* background-image: url('./assets/Car shipping img/Container.png'); */
   background-size: cover;
 }
 
@@ -95,7 +93,7 @@
 @media (max-width: 568px) {
 
   .hero_section {
-    height: 130vh !important;
+    max-height: 130vh !important;
   }
 
   .hero_content {
@@ -127,19 +125,47 @@
   }
 
   .hero_section {
-    height: 100vh !important;
+    max-height: 120vh !important;
   }
 
   .hero_content {
-    max-width: 80%;
+    max-width: 70%;
   }
 
   .text-md-start {
-    margin-left: 80px !important;
+    margin-left: 0px !important;
   }
 
   .hero_title {
     font-size: 2rem !important;
     font-weight: bold !important;
   }
+
+  .hero_bg {
+    margin-top: -80px !important;
+    max-width: 80%;
+  }
+}
+
+
+/* Mobile styles */
+@media (max-width: 568px) {
+  .image {
+    margin-bottom: 20px;
+  }
+  .text {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .width {
+    max-width: 100% !important;
+  }
+
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 992px) {
+
 }
