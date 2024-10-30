@@ -67,8 +67,44 @@
     text-align: left;
 }
 
+.heading {
+  font-size: xx-large !important;
+}
+
+.card-center {
+  margin-left: 20px !important;
+
+}
+
+.width {
+  max-width: 100% !important;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    font-size: xx-large !important;
+  }
 
+  .buttons {
+    max-width: 50%;
+  }
+
+  .card-img {
+    width: 200px !important;
+    height: auto;
+  }
+
+  .text {
+    margin-top: 20px !important;
+    text-align: center;
+    order: 1;
+}
+.image {
+  order: 2;
+  width: 70% !important;
+  height: auto !important;
+
+}
 }
