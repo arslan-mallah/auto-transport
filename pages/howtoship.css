@@ -1,12 +1,4 @@
-.hero_section {
-  height: 80vh;
-}
-
 @media (max-width: 568px) {
-  .hero_section {
-    height: 30vh !important;
-  }
-
   .hero_content {
     max-width: 90%;
   }
@@ -15,8 +7,8 @@
     margin-left: 20px !important;
   }
 
-  .hero_title {
-    font-size: 1.5rem !important;
+  .title {
+    font-size: 3rem !important;
     font-weight: bold !important;
   }
 
@@ -38,8 +30,121 @@
     margin-left: 80px !important;
   }
 
-  .hero_title {
-    font-size: 2rem !important;
+  .title {
+    font-size: 3rem !important;
     font-weight: bold !important;
+  }
+}
+
+
+@media (max-width: 568px) {
+  .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center {
+    margin: -50px !important;
+  }
+
+  .d-flex.center {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px !important;
+  }
+
+  .heading {
+    font-size: 2rem !important;
+    margin-top: -10px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .section_height {
+    height: 150vh !important;
+  }
+
+  .height {
+    max-width: 100% !important;
+  }
+
+  .left_align {
+    text-align: left !important;
+  }
+
+  .reverse .row {
+    flex-direction: column-reverse;
+  }
+
+  .titleup {
+    margin-top: -450px !important;
+    font-size: 2rem !important;
+  }
+
+  .f_width {
+    max-width: 90% !important;
+    width: 90% !important;
+  }
+
+  .image {
+    margin-bottom: -20px !important;
+    width: 200px !important;
+    height: auto;
+  }
+
+  .section_height {
+    height: 130vh !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .height {
+    max-width: 100% !important;
+  }
+
+  .f_width {
+    max-width: 80% !important;
+    width: 80% !important;
+  }
+
+  .column {
+    margin-right: 100px !important;
+  }
+
+  .paddings {
+    padding-right: 50px !important;
+  }
+
+
+  .flex-column {
+    flex-direction: column;
+  }
+
+  .content-column {
+    order: 1;
+    padding-top: 30px;
+    text-align: left !important;
+  }
+
+  .image-column {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-column img {
+    width: 80%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 3rem !important;
+    margin-top: -50px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .image {
+    margin-bottom: -20px !important;
   }
 }
