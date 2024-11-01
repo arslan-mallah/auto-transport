@@ -123,3 +123,7 @@
   margin-bottom: 25px !important;
 }
 }
+
+input::placeholder {
+  font-size: 13px; 
+}

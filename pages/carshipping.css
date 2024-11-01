@@ -297,3 +297,7 @@ section,
     margin-right: 5px;
   }
 }
+
+input::placeholder {
+  font-size: 13px; 
+}
