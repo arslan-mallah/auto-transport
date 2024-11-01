@@ -34,10 +34,12 @@
               trustworthy auto shipper and avail 100% auto transport insurance coverage. Get Started now!</h6>
           </div>
         </div>
-        <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12" style="margin-bottom: 120px;">
-          <div class="card smooth-shadow-md border-0" style="z-index: 1;  box-shadow: rgba(0, 0, 255, 0.2) 0px 2px 5px 4px; max-width: 80%">
+        <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-12 d-flex justify-content-center align-items-center"
+          style="margin-bottom: 120px;">
+          <div class="card smooth-shadow-md border-0"
+            style="z-index: 1; box-shadow: rgba(0, 0, 255, 0.2) 0px 2px 5px 4px; max-width: 80%;">
             <div class="card-body p-5" style="background-color: black;">
-              <div class="form-items"> 
+              <div class="form-items">
                 <h6 class="text-primary text-center" style="font-weight: bold;">Get an instant Quote</h6>
                 <h6 class="text-white text-center"><i class="bi bi-telephone-forward-fill text-primary"></i> 1 (780)
                   550-1515</h6>
@@ -53,13 +55,14 @@
                   </div>
                   <div class="form-button mt-3 text-center">
                     <button id="submit" type="submit" class="btn text-white rounded px-5"
-                      style="background-color: #f31f1f;">Next</button> 
+                      style="background-color: #f31f1f;">Next</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -98,7 +101,8 @@
       <div class="text-center width" style="max-width: 70%;">
         <h5 class=" font-weight-bold margin" style="width: 70%; margin: 0 auto;">Why Choose Us for <span
             class="text-primary">State-to-State Car Shipping?</span></h5>
-        <p class="mt-2">When it comes to car transport services from state to state, our dedication to ensuring a smooth and secure
+        <p class="mt-2">When it comes to car transport services from state to state, our dedication to ensuring a smooth
+          and secure
           transportation experience sets us apart. Here’s why you should opt for our services:</p>
         <hr class="bg-primary" style="width: 35%; margin: 0 auto; border: none; height: 5px;">
       </div>
@@ -289,7 +293,8 @@
     </div>
     <div class="container d-flex align-items-center justify-content-center full-height mt-4 mb-5">
       <div class="text-center width" style="max-width: 80%;">
-        <h5 class=" font-weight-bold margin" style="width: 70%; margin: 0 auto;">How Long Does <span class="text-primary">It
+        <h5 class=" font-weight-bold margin" style="width: 70%; margin: 0 auto;">How Long Does <span
+            class="text-primary">It
             Take to Ship a Car State to Another State?
           </span></h5>
         <p class="mt-3 mb-3">Every state of the USA has its own rules and regulations for road auto transport. If you
@@ -531,40 +536,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
     integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const components = [
-          { url: '../layout/header.html', targetId: 'top_header' },
-          { url: '../layout/navbar.html', targetId: 'header' },
-          { url: '../layout/footer.html', targetId: 'footer' },
-          { url: '../layout/cards.html', targetId: 'cards' }
-        ];
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const components = [
+        { url: '../layout/header.html', targetId: 'top_header' },
+        { url: '../layout/navbar.html', targetId: 'header' },
+        { url: '../layout/footer.html', targetId: 'footer' },
+        { url: '../layout/cards.html', targetId: 'cards' }
+      ];
 
-        const fetchComponent = ({ url, targetId }) => {
-          return fetch(url)
-            .then(response => {
-              if (!response.ok) {
-                throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
-              }
-              return response.text();
-            })
-            .then(data => {
-              document.getElementById(targetId).innerHTML = data;
-            })
-            .catch(error => {
-              console.error('Fetch error:', error);
-            });
-        };
+      const fetchComponent = ({ url, targetId }) => {
+        return fetch(url)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+            }
+            return response.text();
+          })
+          .then(data => {
+            document.getElementById(targetId).innerHTML = data;
+          })
+          .catch(error => {
+            console.error('Fetch error:', error);
+          });
+      };
 
-        const fetchAllComponents = async () => {
-          for (const component of components) {
-            await fetchComponent(component);
-          }
-        };
+      const fetchAllComponents = async () => {
+        for (const component of components) {
+          await fetchComponent(component);
+        }
+      };
 
-        fetchAllComponents();
-      });
-    </script>
+      fetchAllComponents();
+    });
+  </script>
   <script>
     const buttons = document.querySelectorAll('.btn-link');
 

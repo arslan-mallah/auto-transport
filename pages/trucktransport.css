@@ -21,7 +21,10 @@
 }
 
 @media (max-width: 768px) {
-  h2, h1, h5 {
+
+  h2,
+  h1,
+  h5 {
     font-size: 20px;
     width: 100% !important;
   }
@@ -37,54 +40,59 @@
 @media (max-width: 568px) {
   .step {
     margin: 0 10px !important;
-}
-.line {
+  }
+
+  .line {
     width: 75px !important;
     margin-left: -10px !important;
-}
-.line1 {
-  width: 75px !important;
-  margin-left: 15px !important;
-}
+  }
 
-.rounded-circle {
-  margin-left: 25px !important;
-}
+  .line1 {
+    width: 75px !important;
+    margin-left: 15px !important;
+  }
+
+  .rounded-circle {
+    margin-left: 25px !important;
+  }
 }
 
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 992px) {
   .line {
-      width: 190px !important;
-      margin-left: 2px !important;
+    width: 190px !important;
+    margin-left: 2px !important;
   }
+
   .line1 {
     width: 195px !important;
   }
+
   .line2 {
     margin-left: -18px !important;
   }
 
-.center{
-  margin-left: -15px !important;
-}
+  .center {
+    margin-left: -15px !important;
+  }
 
   .icon_text {
     width: 100% !important;
     white-space: nowrap !important;
   }
- .center {
-  align-items: center !important;
-  justify-content: center !important;
- }
 
- .text {
-  order: 1;
-}
+  .center {
+    align-items: center !important;
+    justify-content: center !important;
+  }
 
-.image {
-  order: 2;
-}
+  .text {
+    order: 1;
+  }
+
+  .image {
+    order: 2;
+  }
 
 }
 
@@ -142,5 +150,5 @@
 }
 
 input::placeholder {
-  font-size: 13px; 
+  font-size: 13px;
 }

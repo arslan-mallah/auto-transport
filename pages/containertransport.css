@@ -21,7 +21,10 @@
 }
 
 @media (max-width: 768px) {
-  h2, h1, h5 {
+
+  h2,
+  h1,
+  h5 {
     font-size: 20px;
     width: 100% !important;
   }
@@ -36,41 +39,42 @@
 @media (max-width: 568px) {
   .step {
     margin: 0 10px !important;
-}
+  }
 
-.line {
+  .line {
     width: 30px !important;
-}
+  }
 
-.line1 {
-  width: 60px !important;
-}
+  .line1 {
+    width: 60px !important;
+  }
 
-.align {
-  font-size: small !important;
-}
+  .align {
+    font-size: small !important;
+  }
 
-.margin {
-  margin-top: -50px !important;
-}
+  .margin {
+    margin-top: -50px !important;
+  }
 
-.widthh {
-  max-width: 100% !important;
-}
+  .widthh {
+    max-width: 100% !important;
+  }
 
-.truck-image {
-  display: block;
-  width: 80% !important;
-  margin: 0 auto !important;
-}
+  .truck-image {
+    display: block;
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
 }
 
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 992px) {
   .line {
-      width: 190px !important;
-      margin-left: 2px !important;
+    width: 190px !important;
+    margin-left: 2px !important;
   }
+
   .line1 {
     width: 195px !important;
   }
@@ -79,26 +83,28 @@
     width: 100% !important;
     white-space: nowrap !important;
   }
- .center {
-  align-items: center !important;
-  justify-content: center !important;
- }
 
- .text {
-  order: 1;
-}
+  .center {
+    align-items: center !important;
+    justify-content: center !important;
+  }
 
-.image {
-  order: 2;
-}
+  .text {
+    order: 1;
+  }
 
-.margin {
-  text-align: center;
-}
-.margin .btns {
-  width: 50%; 
-  margin: 5px auto;
-}
+  .image {
+    order: 2;
+  }
+
+  .margin {
+    text-align: center;
+  }
+
+  .margin .btns {
+    width: 50%;
+    margin: 5px auto;
+  }
 
 }
 
@@ -181,6 +187,7 @@
   .image {
     margin-bottom: 20px;
   }
+
   .text {
     align-items: center;
     justify-content: center;

@@ -65,32 +65,32 @@
     margin: 0 !important;
     margin-top: 20px !important;
     text-align: left;
-}
+  }
 
-.heading {
-  font-size: xx-large !important;
-}
+  .heading {
+    font-size: xx-large !important;
+  }
 
-.card-center {
-  flex-direction: column;
-  align-items: center;
-}
+  .card-center {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.width {
-  max-width: 100% !important;
-}
+  .width {
+    max-width: 100% !important;
+  }
 
-.margin1 {
-  margin-bottom: 25px !important;
-}
+  .margin1 {
+    margin-bottom: 25px !important;
+  }
 
-.margin {
-  margin-bottom: -20px !important;
-}
+  .margin {
+    margin-bottom: -20px !important;
+  }
 
-.margintop {
-  margin-top: 40px !important;
-}
+  .margintop {
+    margin-top: 40px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -111,19 +111,20 @@
     margin-top: 20px !important;
     text-align: center;
     order: 1;
-}
-.image {
-  order: 2;
-  width: 70% !important;
-  height: auto !important;
+  }
 
-}
+  .image {
+    order: 2;
+    width: 70% !important;
+    height: auto !important;
 
-.margin1 {
-  margin-bottom: 25px !important;
-}
+  }
+
+  .margin1 {
+    margin-bottom: 25px !important;
+  }
 }
 
 input::placeholder {
-  font-size: 13px; 
+  font-size: 13px;
 }
