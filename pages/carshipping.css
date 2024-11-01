@@ -68,6 +68,11 @@ table tbody th {
   .mob_cards {
     margin: 0 30px;
   }
+  
+  .margin {
+    margin-top: -30px !important;
+}
+
 }
 
 @media (max-width: 568px) {

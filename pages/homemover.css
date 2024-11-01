@@ -44,6 +44,11 @@
   z-index: -1;
 }
 
+.narrow-card {
+  width: 90%; /* Adjust this percentage for desired width */
+  margin: 0 auto; /* Center the card */
+}
+
 @media (max-width: 568px) {
 
   .hero_section {
