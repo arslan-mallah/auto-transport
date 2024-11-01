@@ -37,11 +37,31 @@
   .step {
     margin: 0 10px !important;
 }
+
 .line {
     width: 30px !important;
 }
+
 .line1 {
   width: 60px !important;
+}
+
+.align {
+  font-size: small !important;
+}
+
+.margin {
+  margin-top: -50px !important;
+}
+
+.widthh {
+  max-width: 100% !important;
+}
+
+.truck-image {
+  display: block;
+  width: 80% !important;
+  margin: 0 auto !important;
 }
 }
 
@@ -70,6 +90,14 @@
 
 .image {
   order: 2;
+}
+
+.margin {
+  text-align: center;
+}
+.margin .btns {
+  width: 50%; 
+  margin: 5px auto;
 }
 
 }
