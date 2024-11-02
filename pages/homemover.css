@@ -59,11 +59,12 @@
 @media (max-width: 568px) {
 
   .heights {
-    height: 120vh !important;
+    height: 100vh !important;
   }
 
   .hero_content {
     width: 100%;
+    margin-top: 50px;
   }
 
   .heading {
@@ -72,19 +73,20 @@
   }
 
   .hero_form {
-    width: 120% !important;
+    width: 100% !important;
   }
   
   .submited {
     width: 50% !important;
   }
 
-  .hero_bg {
-    margin-bottom: -100px !important;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    font-size: 2.5rem !important;
+  }
+
   .heights {
     height: 115vh !important;
   }
