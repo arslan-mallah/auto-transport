@@ -65,7 +65,7 @@
 @media (max-width: 568px) {
 
   .hero_section {
-    max-height: 110vh !important;
+    max-height: 80vh !important;
   }
 
   .hero_content {
