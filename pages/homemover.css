@@ -55,60 +55,54 @@
   z-index: -1;
 }
 
+.narrow-card {
+  width: 90%;
+  /* Adjust this percentage for desired width */
+  margin: 0 auto;
+  /* Center the card */
+}
 
 @media (max-width: 568px) {
 
-  .heights {
-    height: 80vh !important;
+  .hero_section {
+    max-height: 90vh !important;
   }
 
   .hero_content {
-    width: 100%;
+    max-width: 90%;
   }
 
-  .heading {
+  .hero_title {
     font-size: 1.5rem !important;
     font-weight: bold !important;
   }
 
-  .hero_form {
-    width: 100% !important;
+  .hero_bg {
+    margin-top: -80px !important;
   }
-  
-  .submited {
-    width: 50% !important;
-  }
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .heading {
-    font-size: 2.5rem !important;
-  }
-
-  .heights {
-    height: 115vh !important;
+  .hero_section {
+    max-height: 120vh !important;
   }
 
   .hero_content {
     max-width: 70%;
-  }s
+  }
 
-  .heading {
+  .text-md-start {
+    margin-left: 0px !important;
+  }
+
+  .hero_title {
     font-size: 2rem !important;
     font-weight: bold !important;
   }
 
   .hero_bg {
+    margin-top: -80px !important;
     max-width: 80%;
-  }
-
-  .hero_form {
-    max-width: 100% !important;
-  }
-
-  .submited {
-    width: 40% !important;
   }
 }
 
@@ -226,8 +220,17 @@
   .mobile-text {
     font-size: 0.8rem;
   }
+
+  .hero_section {
+    height: 130vh !important;
+  }
 }
 
+@media (min-width: 577px) and (max-width: 1024px) {
+  .hero_section {
+    height: 90vh !important;
+  }
+}
 
 section,
 .section {
