@@ -255,6 +255,10 @@ table tbody th {
   .hero_section {
     height: 130vh !important;
   }
+
+  .hero_form {
+    max-width: 100% !important;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 1024px) {

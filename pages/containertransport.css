@@ -146,6 +146,10 @@
   .hero_bg {
     margin-top: -80px !important;
   }
+
+  .hero_form {
+    max-width: 100% !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -198,4 +202,11 @@
     max-width: 100% !important;
   }
 
+  .margin {
+    padding-top: 30px !important;
+    width: 60% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
