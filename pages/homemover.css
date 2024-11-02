@@ -64,8 +64,8 @@
 
 @media (max-width: 568px) {
 
-  .hero_section {
-    max-height: 80vh !important;
+  .heights {
+    height: 120vh !important;
   }
 
   .hero_content {
@@ -88,8 +88,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero_section {
-    max-height: 120vh !important;
+  .heights {
+    height: 115vh !important;
   }
 
   .hero_content {
@@ -225,17 +225,8 @@
   .mobile-text {
     font-size: 0.8rem;
   }
-
-  .hero_section {
-    height: 130vh !important;
-  }
 }
 
-@media (min-width: 577px) and (max-width: 1024px) {
-  .hero_section {
-    height: 90vh !important;
-  }
-}
 
 section,
 .section {
