@@ -65,7 +65,7 @@
 @media (max-width: 568px) {
 
   .heights {
-    height: 130vh !important;
+    height: 100vh !important;
   }
 
   .hero_content {
