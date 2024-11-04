@@ -50,6 +50,11 @@ table tbody th {
   border: 2px solid #ddd;
 }
 
+.gradient-bg {
+  background: linear-gradient(90deg, rgb(53, 143, 247) 45%, rgba(255, 255, 255, 1) 100%);
+  margin-left: 50px;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -85,57 +90,7 @@ table tbody th {
   td {
     padding: 0.4rem;
   }
-
-  .hero_section {
-    max-height: 90vh !important;
-  }
-
-  .hero_content {
-    max-width: 90%;
-  }
-
-  .text-md-start {
-    margin-left: 20px !important;
-  }
-
-  .hero_title {
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
-  }
-
-  .hero_bg {
-    margin-top: -80px !important;
-  }
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .ship_hr {
-    margin: 0 auto !important;
-    margin-bottom: 10px !important;
-  }
-
-  .ship_btn {
-    width: 40% !important;
-  }
-
-  .hero_section {
-    height: 100vh !important;
-  }
-
-  .hero_content {
-    max-width: 80%;
-  }
-
-  .text-md-start {
-    margin-left: 50px !important;
-  }
-
-  .hero_title {
-    font-size: 2rem !important;
-    font-weight: bold !important;
-  }
-}
-
 
 @media (max-width: 768px) {
   .background-image {
@@ -239,69 +194,8 @@ table tbody th {
   }
 }
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 576px) {
-  .mobile-text {
-    font-size: 0.8rem;
-  }
-
-  .hero_section {
-    height: 130vh !important;
-  }
-
-  .hero_form {
-    max-width: 100% !important;
-  }
-}
-
-@media (min-width: 577px) and (max-width: 1024px) {
-  .hero_section {
-    height: 90vh !important;
-  }
-}
-
 section,
 .section {
   padding: 5px 0 !important;
 }
 
-@media (max-width: 768px) {
-  #top_header {
-    padding: 0;
-    height: auto !important;
-  }
-
-  #top_header .container {
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 0 !important;
-  }
-
-  #top_header .small-text {
-    font-size: 0.65rem !important;
-    line-height: 1 !important;
-    padding-bottom: 0 !important;
-  }
-
-  #top_header .mobile-text {
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    align-items: center;
-  }
-
-  #top_header .mobile-text i {
-    margin-right: 5px;
-  }
-}
-
-input::placeholder {
-  font-size: 13px;
-}

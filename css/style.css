@@ -159,6 +159,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 850px;
+    }
+}
+
 .header-carousel .owl-nav .owl-prev {
     display: none;
 }
