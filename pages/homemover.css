@@ -57,57 +57,23 @@
 
 .narrow-card {
   width: 90%;
-  /* Adjust this percentage for desired width */
   margin: 0 auto;
-  /* Center the card */
 }
 
 @media (max-width: 568px) {
 
-  .hero_section {
-    max-height: 90vh !important;
-  }
+ h1 {
+  text-align: center !important;
+ }
 
-  .hero_content {
-    max-width: 90%;
-  }
+ .mobile-width {
+  max-width: 90% !important;
+}
 
-  .title {
-    font-size: 1.8rem !important;
-    font-weight: bold !important;
-  }
-
-  .hero_bg {
-    margin-top: -80px !important;
-  }
-
-  .hero_form {
-    max-width: 100% !important;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero_section {
-    max-height: 120vh !important;
-  }
-
-  .hero_content {
-    max-width: 70%;
-  }
-
-  .text-md-start {
-    margin-left: 0px !important;
-  }
-
-  .hero_title {
-    font-size: 2rem !important;
-    font-weight: bold !important;
-  }
-
-  .hero_bg {
-    margin-top: -80px !important;
-    max-width: 80%;
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -119,10 +85,7 @@
     font-size: 1.5rem;
   }
 
-  .mobile-width {
-    max-width: 90% !important;
-  }
-
+ 
   .img-mobile {
     margin-bottom: 10px;
   }
@@ -154,8 +117,9 @@
     margin-bottom: 10px;
   }
 
-  h5 {
-    font-size: 1.2rem;
+  h2 {
+    font-size: 1.5rem !important;
+   
   }
 
   p {
@@ -184,6 +148,7 @@
   }
 }
 
+
 @media (min-width: 768px) and (max-width: 992px) {
   .mobile-width {
     display: flex;
@@ -200,8 +165,14 @@
   .mobile-width .col-md-6 {
     text-align: center;
     margin-bottom: 20px;
-    max-width: 90% !important;
+    width: 90% !important;
   }
+  .buttons {
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center; 
+    align-items: center;     
+}
 
   .icon-container {
     margin-top: 20px;
@@ -210,6 +181,18 @@
   .width {
     max-width: 90% !important;
   }
+  
+  h1 {
+    text-align: center !important;
+   }
+
+   .hero-form {
+    width: 70%;              /* Set the width of the form */
+    text-align: center;      /* Center the text inside the form */
+    margin: 0 auto;          /* Automatically adjust the left and right margins to center the form */
+}
+
+
 }
 
 .header {
