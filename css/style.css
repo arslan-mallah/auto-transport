@@ -1,18 +1,18 @@
 /* Header Section */
 
 .top-header {
-    background-color: #007bff; /* Blue background */
+    background-color: #007bff; 
     color: white;
-    height: 30px; /* Small height */
+    height: 30px; 
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end; /* Align items to the right */
+    justify-content: flex-end;
     padding: 0 20px;
     text-align: end;
 }
 
 .top-header .header-item {
-    margin-right: 35px; 
+    margin-right: 15px; 
 }
 
 
