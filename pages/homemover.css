@@ -70,6 +70,10 @@
   max-width: 90% !important;
 }
 
+.topmargin {
+  margin-top: -20px !important;
+}
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -187,9 +191,9 @@
    }
 
    .hero-form {
-    width: 70%;              /* Set the width of the form */
-    text-align: center;      /* Center the text inside the form */
-    margin: 0 auto;          /* Automatically adjust the left and right margins to center the form */
+    width: 70%;             
+    text-align: center;     
+    margin: 0 auto;        
 }
 
 

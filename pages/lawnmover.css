@@ -1,70 +1,23 @@
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  background-size: cover;
+.accordion_card {
+  border: 1px solid rgb(204, 204, 204);
+  margin: 1rem 0;
+  border-radius: 10px;
+  background-color: #FCFCFC !important;
 }
 
-@media (max-width: 568px) {
-
-  .hero_section {
-    height: 90vh !important;
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
   }
 
-  .hero_content {
-    max-width: 90%;
+  .fs-5 {
+    text-align: center;
   }
 
-  .text-md-start {
-    margin-left: 20px !important;
-  }
+  /* .header-carousel {
+    margin-bottom: 1100px;
+  } */
 
-  .hero_title {
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
-  }
-
-  .hero_bg {
-    margin-top: -80px !important;
-  }
-
-  .hero_form {
-    max-width: 100% !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .ship_hr {
-    margin: 0 auto !important;
-    margin-bottom: 10px !important;
-  }
-
-  .ship_btn {
-    width: 40% !important;
-  }
-
-  .hero_section {
-    height: 100vh !important;
-  }
-
-  .hero_content {
-    max-width: 80%;
-  }
-
-  .text-md-start {
-    margin-left: 80px !important;
-  }
-
-  .hero_title {
-    font-size: 2rem !important;
-    font-weight: bold !important;
-  }
-}
-
-@media (max-width: 568px) {
   .text {
     margin: 0 !important;
     margin-top: 20px !important;
@@ -81,7 +34,7 @@
   }
 
   .width {
-    max-width: 100% !important;
+    max-width: 90% !important;
   }
 
   .margin1 {
@@ -95,9 +48,29 @@
   .margintop {
     margin-top: 40px !important;
   }
+
+  .carrier {
+    font-size: 1.5rem !important;
+  }
+
+  .buttons {
+    margin: 5px !important;
+  }
+
+  .accordian {
+    max-width: 100% !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .ship_hr {
+    margin: 0 auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ship_btn {
+    width: 40% !important;
+  }
   .heading {
     font-size: xx-large !important;
   }
@@ -129,6 +102,11 @@
   }
 }
 
-input::placeholder {
-  font-size: 13px;
+@media (min-width: 768px) and (max-width: 992px) {
+
+   .hero-form {
+    width: 70% !important;             
+    text-align: center !important;     
+    margin: 0 auto !important;        
+   }
 }

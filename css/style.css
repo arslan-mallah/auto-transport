@@ -166,6 +166,13 @@
     }
 }
 
+@media (max-width: 568px) {
+    .header-lawn .header-item,
+    .header-lawn .header-item img {
+        height: 950px;
+    }
+}
+
 .header-carousel .owl-nav .owl-prev {
     display: none;
 }
