@@ -20,6 +20,12 @@
   z-index: -1;
 }
 
+.image2 {
+  width: 100% !important;
+
+}
+
+
 @media (max-width: 768px) {
 
   h2,
@@ -136,7 +142,7 @@
 }
 
 .image2 {
-  width: 100% !important;
+  /* width: 100% !important; */
   height: 20%;
   margin-bottom: 20px !important;
 }
@@ -177,7 +183,7 @@
   }
 
   .image2 {
-    width: 100% !important;
+    /* width: 100% !important; */
     height: 20%;
     margin-bottom: 20px !important;
   }
@@ -191,6 +197,22 @@
     padding: 5px !important;
    
   }
+
+  .icon_text {
+    margin-left: 20px !important;
+  }
+
+
+  .line1 {
+    width: 90px !important;
+    margin-left: 10px !important;
+  }
+
+  .line2 {
+    margin-left: -20px !important;
+    width: 80px !important;
+  }
+
 
 }
 

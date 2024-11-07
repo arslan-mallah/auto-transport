@@ -94,17 +94,32 @@
   }
 
   .image {
-    order: 2;
+    order: 3;
   }
 
   .margin {
     text-align: center;
+    order: 2;
   }
 
   .margin .btns {
     width: 50%;
     margin: 5px auto;
   }
+
+  h1 {
+    text-align: center !important;
+   }
+
+   .fs-5 {
+    text-align: center;
+   }
+
+   .hero-form {
+    width: 70% !important;             
+    text-align: center;     
+    margin: 0 auto;        
+}
 
 }
 
@@ -208,5 +223,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .btns {
+    margin-bottom: 10px !important;
+  }
   
+  .accordian {
+    max-width: 100% !important;
+  }
+  
+}
+
+
+@media (min-width: 992px) { 
+  .img-lg-small {
+    width: 80% !important; 
+    height: auto !important; 
+  }
 }
