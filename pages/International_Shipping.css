@@ -14,3 +14,32 @@ section,
   border-radius: 10px;
   background-color: #FCFCFC !important;
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+}
+
+
+@media (max-width: 568px) {
+
+  .h1 {
+    font-size: 3rem !important;
+  }
+
+  .width {
+    width: 90%;
+  }
+
+  h2 {
+    width: 100% !important;
+  }
+
+  .line-height {
+    line-height: normal !important;
+  }
+
+  .accordian {
+    max-width: 100% !important;
+  }
+}

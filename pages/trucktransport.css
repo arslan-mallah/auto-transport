@@ -51,13 +51,13 @@
   }
 
   .line {
-    width: 75px !important;
-    margin-left: -10px !important;
+    width: 50px !important;
+    margin-left: 10px !important;
   }
 
   .line1 {
-    width: 75px !important;
-    margin-left: 15px !important;
+    width: 50px !important;
+    margin-left: 30px !important;
   }
 
   .rounded-circle {
@@ -77,11 +77,13 @@
   }
 
   .line1 {
-    width: 195px !important;
+    width: 180px !important;
+    margin-left: 10px !important;
   }
 
   .line2 {
-    margin-left: -18px !important;
+    margin-left: 8px !important;
+    width: 160px !important;
   }
 
   .center {
