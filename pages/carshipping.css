@@ -90,6 +90,11 @@ table tbody th {
   td {
     padding: 0.4rem;
   }
+
+  .card2, .card3, .card4 {
+    display: none !important;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -191,6 +196,10 @@ table tbody th {
 
   .width {
     max-width: 90% !important;
+  }
+
+  .card3, .card4 {
+    display: none !important;
   }
 }
 
