@@ -59,4 +59,23 @@ section,
     display: none !important;
   }
 
+  
+  h1 {
+    text-align: center !important;
+   }
+
+   .fs-5 {
+    text-align: center;
+   }
+
+   .hero-form {
+    width: 70% !important;             
+    text-align: center;     
+    margin: 0 auto;        
 }
+
+
+}
+
+
+
