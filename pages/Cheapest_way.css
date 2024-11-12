@@ -1,3 +1,59 @@
-/* section {
-    margin-top: -50px !important;
-} */
+
+  @media (max-width: 568px) {
+    .header-carousel {
+        margin-top: -50px !important;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .width {
+        max-width: 90% !important;
+        width: 90% !important;
+    }
+
+    .rounded-circle {
+        width: 250px !important; 
+        height: 50px !important;
+    }
+
+    .circle {
+        width: 140px !important; 
+        height: 50px !important;
+    }
+  }
+  
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    .header-carousel {
+        margin-top: -50px !important;
+    }
+
+    .hero-form {
+        width: 70% !important;             
+        text-align: center;     
+        margin: 0 auto;   
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .width {
+        max-width: 90% !important;
+        width: 90% !important;
+    }
+
+    .rounded-circle {
+        width: 105px !important; 
+        height: 50px !important;
+    }
+
+    .circle {
+        width: 60px !important; 
+        height: 50px !important;
+    }
+  }
+  
+ 
