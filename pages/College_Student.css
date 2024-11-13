@@ -32,13 +32,101 @@
    .h2 {
     font-size: 2rem !important;
    }
+
+   .mobile-width {
+    width: 90% !important;
+   }
+
+   .w-75 {
+    width: 100% !important;
+   }
+
+   .content-column {
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .image-column {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; 
+  }
+
+  .btn {
+    padding: 10px 60px !important; 
+    width: auto !important;
+  }
+
+  .banner {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .section-width {
+    width: 90% !important;
+    margin: 0 auto;
   }
   
+  .btnlinks {
+    padding: 5px !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  
+  .width {
+    max-width: 90% !important;
+
+  }
+
+  .contain .flex {
+    flex-direction: column; 
+  }
+
+  .step {
+    margin: 20px 0;
+  }
+
+  .step2 {
+    margin-left: 100px !important;
+  }
+}
   
   @media (min-width: 768px) and (max-width: 992px) {
-   h1 {
-    font-size: xx-small;
+    .header-carousel {
+      height: 90vh !important;
+     }
+     
+   .h1 {
+    margin-top: -300px !important ;
    }
+  
+   
+   h1 {
+    font-size: 3rem !important;
+   }
+
+   .h2 {
+    font-size: 2rem !important;
+   }
+ 
+   .line{
+    line-height: 1.5rem !important;
+    width: 100% !important;
+   }
+ 
+   .btn {
+    padding: 10px 60px !important; 
+    width: auto !important;
+  }
+
+  .width {
+    max-width: 90% !important;
+  }
+
+  .icon_text {
+    margin-left: 10px !important;
+  }
+
   }
   
  
