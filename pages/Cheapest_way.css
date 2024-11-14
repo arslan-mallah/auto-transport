@@ -1,5 +1,4 @@
-
-  @media (max-width: 568px) {
+@media (max-width: 568px) {
     .header-carousel {
         margin-top: -50px !important;
     }
@@ -14,26 +13,26 @@
     }
 
     .rounded-circle {
-        width: 250px !important; 
+        width: 250px !important;
         height: 50px !important;
     }
 
     .circle {
-        width: 140px !important; 
+        width: 140px !important;
         height: 50px !important;
     }
-  }
-  
-  
-  @media (min-width: 768px) and (max-width: 992px) {
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
     .header-carousel {
         margin-top: -50px !important;
     }
 
     .hero-form {
-        width: 70% !important;             
-        text-align: center;     
-        margin: 0 auto;   
+        width: 70% !important;
+        text-align: center;
+        margin: 0 auto;
     }
 
     h1 {
@@ -46,14 +45,12 @@
     }
 
     .rounded-circle {
-        width: 105px !important; 
+        width: 105px !important;
         height: 50px !important;
     }
 
     .circle {
-        width: 60px !important; 
+        width: 60px !important;
         height: 50px !important;
     }
-  }
-  
- 
+}

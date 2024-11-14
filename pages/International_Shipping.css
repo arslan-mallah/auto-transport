@@ -48,34 +48,34 @@ section,
     margin-bottom: 20px !important;
   }
 
-  .card2, .card3, .card4 {
+  .card2,
+  .card3,
+  .card4 {
     display: none !important;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
 
-  .card3, .card4 {
+  .card3,
+  .card4 {
     display: none !important;
   }
 
-  
+
   h1 {
     text-align: center !important;
-   }
+  }
 
-   .fs-5 {
+  .fs-5 {
     text-align: center;
-   }
+  }
 
-   .hero-form {
-    width: 70% !important;             
-    text-align: center;     
-    margin: 0 auto;        
+  .hero-form {
+    width: 70% !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
 }
-
-
-}
-
-
-

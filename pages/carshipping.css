@@ -91,7 +91,9 @@ table tbody th {
     padding: 0.4rem;
   }
 
-  .card2, .card3, .card4 {
+  .card2,
+  .card3,
+  .card4 {
     display: none !important;
   }
 
@@ -198,7 +200,8 @@ table tbody th {
     max-width: 90% !important;
   }
 
-  .card3, .card4 {
+  .card3,
+  .card4 {
     display: none !important;
   }
 }

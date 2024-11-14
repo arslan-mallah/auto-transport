@@ -109,17 +109,17 @@
 
   h1 {
     text-align: center !important;
-   }
+  }
 
-   .fs-5 {
+  .fs-5 {
     text-align: center;
-   }
+  }
 
-   .hero-form {
-    width: 70% !important;             
-    text-align: center;     
-    margin: 0 auto;        
-}
+  .hero-form {
+    width: 70% !important;
+    text-align: center;
+    margin: 0 auto;
+  }
 
 }
 
@@ -227,17 +227,17 @@
   .btns {
     margin-bottom: 10px !important;
   }
-  
+
   .accordian {
     max-width: 100% !important;
   }
-  
+
 }
 
 
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .img-lg-small {
-    width: 80% !important; 
-    height: auto !important; 
+    width: 80% !important;
+    height: auto !important;
   }
 }

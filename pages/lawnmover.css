@@ -71,6 +71,7 @@
   .ship_btn {
     width: 40% !important;
   }
+
   .heading {
     font-size: xx-large !important;
   }
@@ -104,9 +105,9 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
 
-   .hero-form {
-    width: 70% !important;             
-    text-align: center !important;     
-    margin: 0 auto !important;        
-   }
+  .hero-form {
+    width: 70% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
 }
