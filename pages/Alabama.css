@@ -1,26 +1,77 @@
   table tbody td,
   table tbody th {
-    border: 2px solid #ddd;
+      border: 2px solid #ddd;
   }
-  
+
   .accordion_card {
-    border: 1px solid rgb(204, 204, 204);
-    margin: 1rem 0;
-    border-radius: 10px;
-    background-color: #FCFCFC !important;
+      border: 1px solid rgb(204, 204, 204);
+      margin: 1rem 0;
+      border-radius: 10px;
+      background-color: #FCFCFC !important;
   }
 
   li::marker {
-    font-size: 2em;
-    /* color: #0d6efd; */
-  }
-  
-  @media (max-width: 568px) {
-  
-  
+      font-size: 2em;
   }
 
-  
+  @media (max-width: 568px) {
+      table {
+          width: 80%;
+          font-size: 0.6rem;
+      }
+
+      th,
+      td {
+          padding: 0.4rem;
+      }
+
+      .banner {
+        font-size: 2rem !important;
+        max-width: 100% !important;
+      }
+
+      .para {
+        max-width: 100% !important;
+      }
+
+      .mobile-width {
+        margin-top: -50px !important;
+      }
+
+      .line {
+        max-width: 90% !important;
+        margin: 0 auto !important;
+      }
+
+      .width {
+        width: 90% !important;
+      }     
+  }
+
+
   @media (min-width: 768px) and (max-width: 992px) {
+
+    h1 {
+        text-align: center !important;
+      }
     
+      .fs-5 {
+        text-align: center;
+      }
+    
+      .hero-form {
+        width: 70% !important;
+        text-align: center;
+        margin: 0 auto;
+      }
+        
+      .banner {
+        font-size: 2rem !important;
+        max-width: 100% !important;
+      }
+
+      .margin {
+        max-width: 80% !important;
+        margin: 0 auto !important;
+      }
   }

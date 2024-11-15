@@ -44,12 +44,13 @@ ul li::marker {
   .content-column {
     text-align: center;
     padding-top: 15px;
+    order: 2 !important;
   }
 
   .image-column {
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
+    justify-content: flex-start !important; 
+    text-align: left !important;           
+    order: 1 !important;   
   }
 
   .btn {
@@ -59,7 +60,7 @@ ul li::marker {
 
   .banner {
     width: 80%;
-    margin: 0 auto;
+    justify-content: left !important;
   }
 
   .section-width {
