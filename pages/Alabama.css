@@ -30,6 +30,10 @@
         max-width: 100% !important;
       }
 
+      .left {
+        margin-left: 20px !important;
+      }
+
       .para {
         max-width: 100% !important;
       }
@@ -45,7 +49,27 @@
 
       .width {
         width: 90% !important;
-      }     
+      }  
+
+      h1 {
+        text-align: center !important;
+        max-width: 60% !important;
+        margin:  0 auto !important;
+      }
+    
+      .fs-5 {
+        text-align: center;
+      }
+
+      .image {
+        max-width: 80% !important;
+      }
+
+      section {
+        margin-top: -40px !important;
+        margin-bottom: -40px !important;
+      }
+    
   }
 
 

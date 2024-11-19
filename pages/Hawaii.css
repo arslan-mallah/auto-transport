@@ -1,0 +1,35 @@
+p {
+    line-height: 2rem !important;
+}
+
+@media (max-width: 568px) {
+    /* h1 {
+      text-align: center !important;
+      max-width: 60% !important;
+      margin:  0 auto !important;
+    }
+  
+    .fs-5 {
+      text-align: center;
+    } */
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+/* 
+  h1 {
+      text-align: center !important;
+    }
+  
+    .fs-5 {
+      text-align: center;
+    }
+  
+    .hero-form {
+      width: 70% !important;
+      text-align: center;
+      margin: 0 auto;
+    } */
+      
+}
