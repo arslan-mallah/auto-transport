@@ -44,7 +44,7 @@ ul li::before {
 
 
 @media (max-width: 568px) {
-    /* h1 {
+    h1 {
       text-align: center !important;
       max-width: 60% !important;
       margin:  0 auto !important;
@@ -52,13 +52,43 @@ ul li::before {
   
     .fs-5 {
       text-align: center;
-    } */
+    }
 
+    .center {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+
+    ul {
+      font-size: 1.2rem;
+      list-style-type: none; 
+      padding-left: 0;
+      max-width: 100% !important;
+    }
+    
+    ul li::before {
+      content: '●'; 
+      color: #007bff; 
+      margin-right: 10px;
+      font-size: 1.2rem; 
+    }
+
+    .width {
+      max-width: 90% !important;
+    }
+
+    .card-width {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+
+    .text {
+      margin: 0 auto !important;
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 992px) {
-/* 
   h1 {
       text-align: center !important;
     }
@@ -71,8 +101,8 @@ ul li::before {
       width: 70% !important;
       text-align: center;
       margin: 0 auto;
-    } */
-      
+    } 
+  
 }
 
 
@@ -92,4 +122,94 @@ ul li::before {
 }
 .hover-card:hover .card-text {
   color: white; 
+}
+
+
+/* General desktop styles (unchanged) */
+.background-section {
+  background-image: url('./assets/Hawaii/Group 328.webp');
+  background-size: cover;
+  background-position: left;
+  margin-left: -100px;
+}
+
+.title-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff; 
+  text-align: left;
+}
+
+.highlight-text {
+  color: #000; 
+}
+
+.button-container {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.responsive-btn {
+  font-weight: bold;
+  background-color: #fff;
+  color: #007bff;
+  padding: 1rem;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+
+.responsive-image {
+  height: auto;
+  width: 80%;
+  padding-top: 100px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .background-section {
+    background-position: center;
+    margin-left: 0; 
+  }
+
+  .mobile-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .title-heading {
+    font-size: 2rem; 
+    text-align: center; 
+  }
+
+  .button-container {
+    text-align: center; 
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+
+  .responsive-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007bff !important;
+    color: white !important;
+    border-radius: 5px !important;
+  }
+
+  .image-box {
+    width: 80%; 
+    padding: 20px;
+    margin: 0 auto !important;
+  }
+
+  .responsive-image {
+    width: 80%; 
+    padding-top: 20px; 
+  }
 }
