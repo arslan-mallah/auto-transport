@@ -85,8 +85,17 @@
     margin: 0 auto !important;
     text-align: justify !important;
   }
-
 }
+
+@media (max-width: 768px) {
+  .ordr {
+    order: 1;
+  }
+  .ordrr {
+    order: 2;
+  }
+}
+
 
 /* Tablet styles */
 @media (min-width: 768px) and (max-width: 992px) {

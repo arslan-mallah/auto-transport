@@ -35,6 +35,11 @@
   background-color: #FCFCFC !important;
 }
 
+.faq-heading {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
 .background-image {
   position: absolute;
   top: 0;
@@ -80,6 +85,9 @@
     display: none !important;
   }
 
+  .faq-heading {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 768px) {
