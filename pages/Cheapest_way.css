@@ -1,3 +1,28 @@
+#cards {
+    margin-top: -50px !important;
+    margin-bottom: -50px !important;
+}
+
+.swiper-container {
+    padding: 20px 0;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-width {
+        width: 80% !important;
+    }
+
+    .text-heading {
+        font-size: 1.5rem !important;
+    }
+  }
+
 @media (max-width: 568px) {
     .header-carousel {
         margin-top: -50px !important;
@@ -54,3 +79,4 @@
         height: 50px !important;
     }
 }
+
