@@ -2,7 +2,12 @@
   border: 1px solid rgb(204, 204, 204);
   margin: 1rem 0;
   border-radius: 10px;
-  background-color: #FCFCFC !important;
+  background-color: #fcfcfc !important;
+}
+
+.faq-heading {
+  font-size: 17px !important;
+  font-weight: 600 !important;
 }
 
 .section {
@@ -14,7 +19,30 @@ ul li::marker {
   color: #007bff;
 }
 
+.gradient-bg {
+  background: linear-gradient(
+    90deg,
+    rgb(53, 143, 247) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-left: 50px;
+}
 
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cards-width {
+    width: 80% !important;
+  }
+}
 
 @media (max-width: 568px) {
   .header-carousel {
@@ -48,9 +76,9 @@ ul li::marker {
   }
 
   .image-column {
-    justify-content: flex-start !important; 
-    text-align: left !important;           
-    order: 1 !important;   
+    justify-content: flex-start !important;
+    text-align: left !important;
+    order: 1 !important;
   }
 
   .btn {
@@ -76,7 +104,6 @@ ul li::marker {
 
   .width {
     max-width: 90% !important;
-
   }
 
   .contain .flex {
@@ -90,6 +117,10 @@ ul li::marker {
   .step2 {
     margin-left: 100px !important;
   }
+
+  .faq-heading {
+    font-size: 14px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -100,7 +131,6 @@ ul li::marker {
   .h1 {
     margin-top: -300px !important;
   }
-
 
   h1 {
     font-size: 3rem !important;
@@ -127,5 +157,4 @@ ul li::marker {
   .icon_text {
     margin-left: 10px !important;
   }
-
 }

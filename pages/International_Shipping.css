@@ -3,6 +3,10 @@ section,
   padding: 5px 0 !important;
 }
 
+.lineheight {
+  line-height: 2rem !important;
+}
+
 .gradient-bg {
   background: linear-gradient(90deg, rgb(53, 143, 247) 45%, rgba(255, 255, 255, 1) 100%);
   margin-left: 50px;
@@ -15,9 +19,35 @@ section,
   background-color: #FCFCFC !important;
 }
 
+.faq-heading {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
 li::marker {
   font-size: 2em;
-  color:  #0D6EFD;
+  color: #0D6EFD;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, rgb(53, 143, 247) 45%, rgba(255, 255, 255, 1) 100%);
+  margin-left: 50px;
+}
+
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cards-width {
+    width: 80% !important;
+  }
 }
 
 @media (max-width: 568px) {
@@ -56,6 +86,10 @@ li::marker {
   .card3,
   .card4 {
     display: none !important;
+  }
+
+  .faq-heading {
+    font-size: 14px !important;
   }
 }
 

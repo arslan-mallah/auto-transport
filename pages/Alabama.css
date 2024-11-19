@@ -1,101 +1,136 @@
   table tbody td,
   table tbody th {
-      border: 2px solid #ddd;
+    border: 2px solid #ddd;
   }
 
   .accordion_card {
-      border: 1px solid rgb(204, 204, 204);
-      margin: 1rem 0;
-      border-radius: 10px;
-      background-color: #FCFCFC !important;
+    border: 1px solid rgb(204, 204, 204);
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: #FCFCFC !important;
+  }
+
+  .faq-heading {
+    font-size: 17px !important;
+    font-weight: 600 !important;
   }
 
   li::marker {
-      font-size: 2em;
+    font-size: 2em;
+  }
+
+  #cards {
+    margin-top: -50px !important;
+    margin-bottom: -50px !important;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(90deg, rgb(53, 143, 247) 45%, rgba(255, 255, 255, 1) 100%);
+    margin-left: 50px;
+  }
+
+  .swiper-container {
+    padding: 20px 0;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .cards-width {
+      width: 80% !important;
+    }
+
   }
 
   @media (max-width: 568px) {
-      table {
-          width: 80%;
-          font-size: 0.6rem;
-      }
+    table {
+      width: 80%;
+      font-size: 0.6rem;
+    }
 
-      th,
-      td {
-          padding: 0.4rem;
-      }
+    th,
+    td {
+      padding: 0.4rem;
+    }
 
-      .banner {
-        font-size: 2rem !important;
-        max-width: 100% !important;
-      }
+    .banner {
+      font-size: 2rem !important;
+      max-width: 100% !important;
+    }
 
-      .left {
-        margin-left: 20px !important;
-      }
+    .left {
+      margin-left: 20px !important;
+    }
 
-      .para {
-        max-width: 100% !important;
-      }
+    .para {
+      max-width: 100% !important;
+    }
 
-      .mobile-width {
-        margin-top: -50px !important;
-      }
+    .mobile-width {
+      margin-top: -50px !important;
+    }
 
-      .line {
-        max-width: 90% !important;
-        margin: 0 auto !important;
-      }
+    .line {
+      max-width: 90% !important;
+      margin: 0 auto !important;
+    }
 
-      .width {
-        width: 90% !important;
-      }  
+    .width {
+      width: 90% !important;
+    }
 
-      h1 {
-        text-align: center !important;
-        max-width: 60% !important;
-        margin:  0 auto !important;
-      }
-    
-      .fs-5 {
-        text-align: center;
-      }
+    h1 {
+      text-align: center !important;
+      max-width: 60% !important;
+      margin: 0 auto !important;
+    }
 
-      .image {
-        max-width: 80% !important;
-      }
+    .fs-5 {
+      text-align: center;
+    }
 
-      section {
-        margin-top: -40px !important;
-        margin-bottom: -40px !important;
-      }
-    
+    .image {
+      max-width: 80% !important;
+    }
+
+    section {
+      margin-top: -40px !important;
+      margin-bottom: -40px !important;
+    }
+
+    .faq-heading {
+      font-size: 14px !important;
+    }
   }
 
 
   @media (min-width: 768px) and (max-width: 992px) {
 
     h1 {
-        text-align: center !important;
-      }
-    
-      .fs-5 {
-        text-align: center;
-      }
-    
-      .hero-form {
-        width: 70% !important;
-        text-align: center;
-        margin: 0 auto;
-      }
-        
-      .banner {
-        font-size: 2rem !important;
-        max-width: 100% !important;
-      }
+      text-align: center !important;
+    }
 
-      .margin {
-        max-width: 80% !important;
-        margin: 0 auto !important;
-      }
+    .fs-5 {
+      text-align: center;
+    }
+
+    .hero-form {
+      width: 70% !important;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .banner {
+      font-size: 2rem !important;
+      max-width: 100% !important;
+    }
+
+    .margin {
+      max-width: 80% !important;
+      margin: 0 auto !important;
+    }
   }
