@@ -2,6 +2,11 @@
   table tbody th {
     border: 2px solid #ddd;
   }
+/* 
+  .table-width {
+    width: 700% !important;
+    margin-left: -400px !important;
+  } */
 
   .accordion_card {
     border: 1px solid rgb(204, 204, 204);
@@ -43,7 +48,6 @@
     .cards-width {
       width: 80% !important;
     }
-
   }
 
   @media (max-width: 568px) {
@@ -60,6 +64,8 @@
     .banner {
       font-size: 2rem !important;
       max-width: 100% !important;
+      margin-top: -80px !important;
+      margin-bottom: 30px !important;
     }
 
     .left {
@@ -105,6 +111,22 @@
     .faq-heading {
       font-size: 14px !important;
     }
+
+    .oder {
+      order: 1;
+    }
+
+    .order {
+      order: 2;
+    }
+
+    .image-section img {
+      display: block;
+      max-width: 90% !important; 
+      height: auto; 
+      margin: 0 auto !important;
+    }
+
   }
 
 
@@ -133,4 +155,51 @@
       max-width: 80% !important;
       margin: 0 auto !important;
     }
+
+  .order,
+  .oder {
+    width: 100% !important; 
+  }
+
+    .row.h-100 {
+      flex-direction: column !important;
+    }
+  
+    .order {
+      order: 2;
+    }
+  
+    .oder {
+      order: 1;
+    }
+  
+    .oder h2 {
+      text-align: center;
+      margin: 0 auto !important;
+      margin-top: -80px !important;
+      margin-bottom: 30px !important;
+    }
+
+    .text-section,
+  .image-section {
+    width: 100%; 
+  }
+
+  .text-section {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  .image-section {
+    text-align: center; 
+  }
+
+  .image-section img {
+    max-width: 100%; 
+    height: auto; 
+  }
+    
+  .para-width {
+    max-width: 100% !important;
+  }
   }
