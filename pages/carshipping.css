@@ -210,3 +210,28 @@ section,
 .section {
   padding: 5px 0 !important;
 }
+
+.gradient-bg {
+  background: linear-gradient(
+    90deg,
+    rgb(53, 143, 247) 45%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  margin-left: 50px;
+}
+
+.swiper-container {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .cards-width {
+    width: 80% !important;
+  }
+}

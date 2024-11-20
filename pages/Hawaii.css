@@ -141,14 +141,6 @@ ul li::before {
       height: auto; 
     }
 
-    .orderr{
-      order: 1;
-    }
-
-    .order {
-      order: 2;
-    }
-
     .text-width {
       max-width: 100% !important;
     }
@@ -266,6 +258,14 @@ ul li::before {
   .h3 {
     font-size: 2rem !important; 
   }
+ 
+  .orderr{
+    order: 1;
+  }
+
+  .order {
+    order: 2;
+  }
   
 /* Hover effect styles */
 .hover-card {
@@ -317,6 +317,10 @@ ul li::before {
 
   .content-box {
     transform: translateY(-70px); 
+  }
+
+  .content-box {
+    transform: translateX(150px); 
   }
 
   .image-box {

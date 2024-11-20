@@ -321,4 +321,20 @@ input::placeholder {
   .span {
     font-size: 0.8rem !important;
   }
+
+  .select {
+    display: flex;
+    align-items: center;
+    /* margin-left: -30px !important; */
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+
+  .select2 {
+    margin-left: -10px !important;
+  }
+
+  .select3 {
+    margin-left: 40px !important;
+  }
 }
