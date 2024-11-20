@@ -23,16 +23,20 @@ p {
 }
 
 ul {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   list-style-type: none; 
   padding-left: 0;
+}
+
+li {
+  padding-bottom: 10px;
 }
 
 ul li::before {
   content: '●'; 
   color: #007bff; 
   margin-right: 10px;
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
 }
 
 @media (max-width: 768px) {
@@ -60,7 +64,7 @@ ul li::before {
     }
 
     ul {
-      font-size: 1.2rem;
+      font-size: 1rem;
       list-style-type: none; 
       padding-left: 0;
       max-width: 100% !important;
@@ -70,7 +74,7 @@ ul li::before {
       content: '●'; 
       color: #007bff; 
       margin-right: 10px;
-      font-size: 1.2rem; 
+      font-size: 1rem; 
     }
 
     .width {
@@ -84,6 +88,21 @@ ul li::before {
 
     .text {
       margin: 0 auto !important;
+    }
+
+    .image-box {
+      width: 80% !important;
+    }
+
+    .image-center {
+      display: block; 
+      width: 90% !important;
+      margin: 0 auto !important; 
+    }
+    
+    .icons {
+      width: 40px !important;
+      height: 40px !important;
     }
 }
 
@@ -102,6 +121,37 @@ ul li::before {
       text-align: center;
       margin: 0 auto;
     } 
+
+    .container-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .para {
+      text-align: center; 
+    }
+  
+    .imge {
+      max-width: 100%;
+      height: auto; 
+    }
+
+    .orderr{
+      order: 1;
+    }
+
+    .order {
+      order: 2;
+    }
+
+    .text-width {
+      max-width: 100% !important;
+    }
   
 }
 
@@ -121,7 +171,7 @@ ul li::before {
   filter: brightness(0) invert(1); 
 }
 .hover-card:hover .card-text {
-  color: white; 
+  color: white !important; 
 }
 
 
@@ -211,5 +261,65 @@ ul li::before {
   .responsive-image {
     width: 80%; 
     padding-top: 20px; 
+  }
+
+  .h3 {
+    font-size: 2rem !important; 
+  }
+  
+/* Hover effect styles */
+.hover-card {
+  transition: all 0.3s ease;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hover-card:hover {
+  background-color: var(--bs-primary); 
+  color: white;
+}
+.hover-card:hover .card-img {
+  filter: brightness(0) invert(1); 
+}
+.hover-card:hover .card-text {
+  color: white !important; 
+}
+
+}
+
+
+/* Default styles for all screens */
+.background-section {
+  position: relative;
+}
+
+.responsive-btn {
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for desktop view only */
+@media (min-width: 992px) {
+.title-heading {
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+  .content-box {
+    transform: translateY(-70px); 
+  }
+
+  .image-box {
+    transform: translateX(70px); 
   }
 }
