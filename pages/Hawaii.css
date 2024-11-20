@@ -315,14 +315,9 @@ ul li::before {
   line-height: 1.2;
 }
 
-  .content-box {
-    transform: translateY(-70px); 
-  }
-
-  .content-box {
-    transform: translateX(150px); 
-  }
-
+.content-box {
+  transform: translate(200px, -100px);
+}
   .image-box {
     transform: translateX(70px); 
   }
