@@ -48,6 +48,19 @@ li::marker {
   .cards-width {
     width: 80% !important;
   }
+
+  .orderr {
+    order: 2;
+  }
+
+  .ordeer {
+    order: 1;
+  }
+
+  .butoon {
+    width: 50% !important;
+  }
+ 
 }
 
 @media (max-width: 568px) {
@@ -90,6 +103,11 @@ li::marker {
 
   .faq-heading {
     font-size: 14px !important;
+  }
+
+  .butoon {
+    width: 70% !important;
+    margin-bottom: 20px !important;
   }
 }
 
