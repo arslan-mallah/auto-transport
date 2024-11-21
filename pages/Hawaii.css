@@ -323,7 +323,7 @@ ul li::before {
 }
 
 .content-box {
-  transform: translate(200px, -80px);
+  transform: translate(200px, -50px);
 }
   .image-box {
     transform: translateX(70px); 
