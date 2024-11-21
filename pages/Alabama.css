@@ -64,7 +64,7 @@
     .banner {
       font-size: 2rem !important;
       max-width: 100% !important;
-      margin-top: -80px !important;
+      margin-top: -40px !important;
       margin-bottom: 30px !important;
     }
 
@@ -127,6 +127,11 @@
       margin: 0 auto !important;
     }
 
+    .text2 {
+      margin: 0 auto !important;
+      text-align: center !important;
+    }
+
   }
 
 
@@ -152,7 +157,7 @@
     }
 
     .margin {
-      max-width: 80% !important;
+      max-width: 100% !important;
       margin: 0 auto !important;
     }
 
@@ -202,4 +207,31 @@
   .para-width {
     max-width: 100% !important;
   }
+
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .box1, .box2 {
+      flex: 1 1 100% !important;
+      max-width: 80% !important;
+      margin: 0 auto !important;
+    }
+  
+    .box1 h2 {
+      font-size: 1.5rem; 
+    }
+  
+    .box1 p {
+      font-size: 1rem; 
+    }
+  
+    .box2 ul {
+      padding: 1rem; 
+      font-size: 1rem; 
+    }
+
+    .text-content {
+      margin-bottom: 2rem;
+    }
+  }
+  
