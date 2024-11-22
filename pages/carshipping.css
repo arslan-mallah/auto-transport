@@ -55,6 +55,12 @@ table tbody th {
   margin-left: 50px;
 }
 
+.faq-heading {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
@@ -97,6 +103,42 @@ table tbody th {
     display: none !important;
   }
 
+  .faq-heading {
+    font-size: 14px !important;
+  }
+
+  .h3 {
+    font-size: 18px !important;
+  }
+
+  .h4 {
+    font-size: 17px !important;
+  }
+  
+  .sec-height {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .accordion {
+    max-width: 90% !important;
+  }
+
+  .accordian {
+    max-width: 90% !important;
+  }
+
+  .larger {
+    font-size: medium !important;
+  }
+
+  .maxwidth {
+    max-width: 90% !important;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -203,6 +245,29 @@ table tbody th {
   .card3,
   .card4 {
     display: none !important;
+  }
+
+  h1 {
+    text-align: center !important;
+  }
+
+  .fs-5 {
+    text-align: center;
+  }
+
+  .hero-form {
+    width: 70% !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .mobile-width {
+    max-width: 90% !important;
+  }
+
+  .sec-height {
+    max-width: 90% !important;
+    margin: 0 auto !important;
   }
 }
 
