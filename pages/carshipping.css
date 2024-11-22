@@ -139,6 +139,15 @@ table tbody th {
   .hide-on-mobile {
     display: none;
   }
+
+  .oder {
+    order: 1;
+  }
+
+  .order {
+    order: 2;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -216,7 +225,7 @@ table tbody th {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .mobile-width {
+  /* .mobile-width {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +241,7 @@ table tbody th {
     text-align: center;
     margin-bottom: 20px;
     max-width: 90% !important;
-  }
+  } */
 
   .icon-container {
     margin-top: 20px;
@@ -263,10 +272,38 @@ table tbody th {
 
   .mobile-width {
     max-width: 90% !important;
+    width: 90% !important;
+    margin: 0 auto !important;
   }
 
   .sec-height {
     max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .container-row {
+    flex-direction: column;
+    width: 100% !important; 
+  }
+
+  .box {
+    margin-bottom: 20px; 
+    width: 100% !important;
+  }
+
+  .text2 {
+    text-align: center !important;
+  }
+
+  .oder {
+    order: 1;
+  }
+
+  .order {
+    order: 2;
+  }
+
+  .ship_hr {
     margin: 0 auto !important;
   }
 }
