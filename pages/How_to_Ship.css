@@ -1,6 +1,39 @@
 
   @media (max-width: 568px) {
+    .width { 
+      max-width: 90% !important;
+      margin: 0 auto !important;
+    }
+
+    .margin {
+      margin-top: -20px !important;
+    }
     
+    .image {
+      width: 500px !important;
+      height: auto !important;
+    }
+
+    .height {
+      height: 30vh;
+    }
+
+    .content {
+      margin-top: -30px !important;
+    }
+
+    .f_width {
+      width: 90% !important;
+      text-align: start !important;
+    }
+
+    .img  {
+      margin-bottom: 50px !important;
+    }
+
+    .description {
+      width: 90% !important;
+    }
   }
   
   @media (min-width: 768px) and (max-width: 992px) {
@@ -248,8 +281,8 @@
         display: none
     }
     .main-timeline .date-outer {
-        width: 110px;
-        height: 110px
+        width: 90%;
+        height: auto;
     }
     .main-timeline .date-outer:before,
     .main-timeline .date-outer:after {
@@ -264,13 +297,14 @@
     }
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(2n) .timeline-content {
-        width: 95%;
+        width: 80%;
         text-align: center;
         padding: 10px 0
     }
     .main-timeline .title {
         margin-bottom: 10px
     }
+    
 }
 
 .icon {
@@ -291,16 +325,70 @@
 
 .icon2 {
   position: sticky;
-  top: -150%;
+  top: -550%;
   transform: translate(-50%, -50%); 
-  transition: transform 1s ease-in-out; /* Ensure smooth transition */
+  transition: transform 1s ease-in-out; 
   z-index: 10;
 }
 
 .icon2.moving-up {
-  transform: translate(0%, -900%); /* Move the icon up */
+  transform: translate(0%, -900%);
 }
 
 .icon2.moving-down {
-  transform: translate(0%, 700%); /* Move the icon down */
+  transform: translate(0%, 700%);
+}
+
+
+
+.main-timeline .icon2 {
+  width: 48px;
+  height: 48px;
+  line-height: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0
+}
+
+.main-timeline .icon2:before,
+.main-timeline .icon2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon2:before {
+background-image: url('./assets/HowItWorks/car.png'); 
+background-size: contain; 
+background-repeat: no-repeat;
+background-position: center;
+
+left: -3px;
+}
+
+.main-timeline .icon2:after {
+  left: 3px
+  
+}
+
+.main-timeline .timeline:hover .icon2:before {
+  left: 3px
+}
+
+.main-timeline .timeline:hover .icon2:after {
+  left: -3px
+}
+
+@media only screen and (max-width: 767px) {
+  .main-timeline .icon2 {
+      margin: auto 0
+  }
 }

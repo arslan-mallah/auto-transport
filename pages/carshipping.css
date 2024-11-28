@@ -148,6 +148,9 @@ table tbody th {
     order: 2;
   }
 
+  .pragraph {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 768px) {
