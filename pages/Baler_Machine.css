@@ -47,6 +47,17 @@ table tbody th {
     .faq-heading {
       font-size: 14px !important;
     }
+
+    table {
+      width: 130% !important;
+      font-size: 0.6rem;
+    }
+
+    th,
+    td {
+      padding: 0.4rem;
+    }
+
   
   }
   
