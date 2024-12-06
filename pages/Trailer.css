@@ -69,6 +69,11 @@
     .faq-heading {
       font-size: 14px !important;
     }
+
+    .text-width {
+      max-width: 100% !important;
+      margin: 0 auto !important;
+    }
   
   }
   
