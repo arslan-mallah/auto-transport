@@ -56,6 +56,25 @@
     .faq-heading {
       font-size: 14px !important;
     }
+
+    .center {
+        width: 90% !important;
+        margin: 0 auto !important;
+      }
+  
+      .card-width {
+        width: 90% !important;
+        margin: 0 auto !important;
+      }
+
+      .orderr {
+        order: 1;
+        margin-top: -40px !important;
+      }
+  
+      .order {
+        order: 2;
+      }
   
    
   }
