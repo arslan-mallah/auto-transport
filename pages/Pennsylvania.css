@@ -45,7 +45,17 @@
   
   
   @media (max-width: 568px) {
+
+    h1 {
+      text-align: center !important;
+    }
   
+    .fs-5 {
+      text-align: center !important;
+      max-width: 80% !important;
+      margin: 0 auto !important;
+    }
+
     .card2,
     .card3,
     .card4 {
@@ -81,7 +91,7 @@
     }
     
     .buttun {
-      margin-top: 10px !important;
+      margin-bottom: -5px !important;
     }
 
     .line {
@@ -117,6 +127,34 @@
 
   .no-scroll-table thead th {
       font-size: 10px !important; 
+  }
+
+  .content-box {
+    text-align: center; 
+  }
+
+  .title-heading {
+    text-align: center !important;
+    margin-top: -30px !important;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 50px !important;
+  }
+
+  .image-box {
+    justify-content: center !important; 
+  }
+
+  .image-box img {
+    width: 100%;
+    margin-bottom: -60px !important;
+  }
+
+  .padding {
+    margin-top: -40px !important;
   }
   }
   
