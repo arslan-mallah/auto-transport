@@ -24,6 +24,14 @@
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Preload LCP Image -->
+<link rel="preload" as="image" href="./assets/Pennsylvania/PA.webp">
+
+  <style>
+    /* Inline critical styles for faster rendering */
+    img { display: block; max-width: 100%; height: auto; }
+  </style>
 </head>
 
 <body>
@@ -93,7 +101,20 @@
     <div class="header-carousel-item header-item">
       <img src="./assets/Pennsylvania/Frame 2853.webp" class="img-fluid w-100 d-none d-md-block"
         alt="Desktop Image">
-      <img src="./assets/Pennsylvania/PA.webp" class="img-fluid w-100 d-md-none" alt="Mobile Image">
+      <!-- Responsive LCP Image -->
+<picture>
+    <!-- Serve smaller image for mobile devices -->
+    <source srcset="./assets/Pennsylvania/PA.webp" media="(max-width: 768px)">
+    <!-- Default image for larger devices -->
+    <img 
+      src="./assets/Pennsylvania/Frame 2853.webp" 
+      class="img-fluid w-100 d-md-none" 
+      loading="eager" 
+      width="800" 
+      height="600" 
+      style="max-width: 100%; height: auto;" 
+      alt="Mobile Image">
+  </picture>
       <div class="carousel-caption">
         <div class="container align-items-center py-4">
           <div class="row g-5 align-items-center">
@@ -490,6 +511,8 @@
       });
     });
   </script>
+
+<script defer src="non-critical.js"></script>
 </body>
 
 </html>
