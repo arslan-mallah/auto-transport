@@ -171,7 +171,9 @@
     }
   
     .fs-5 {
-      text-align: center;
+      text-align: center !important;
+      max-width: 80% !important;
+      margin: 0 auto !important;
     }
   
     .hero-form {
@@ -180,5 +182,47 @@
       margin: 0 auto;
     }
   
+    .box {
+      display: block; 
+      width: 100%; 
+      text-align: center !important;
+
+  }
+
+  .orde {
+      order: 2; 
+  }
+
+  .ord {
+      order: 1; 
+  }
+
+  .box img {
+      max-width: 80%; 
+      margin: 0 auto;
+  }
+
+  .box h2, .box p {
+      padding: 10px 15px; 
+      margin-top: -20px !important;
+
+  }
+
+  h2 {
+    text-align: left !important;
+  }
+
+  .para {
+    max-width: 100% !important;
+  }
+
+  .col-md-5 {
+    width: 90% !important;
+    margin-left: 70px !important;
+  }
   
+  .col-md-7 {
+    max-width: 80% !important;
+    margin: 0 auto !important;
+  }
   }
