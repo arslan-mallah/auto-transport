@@ -75,7 +75,10 @@
       .order {
         order: 2;
       }
-  
+
+      .mob-card {
+        margin-bottom: 80px !important;
+      }
    
   }
   
@@ -102,5 +105,10 @@
       text-align: center;
       margin: 0 auto;
     }
+
+    .tab {
+      margin-bottom: 100px !important;
+    }
   
   }
+ 
