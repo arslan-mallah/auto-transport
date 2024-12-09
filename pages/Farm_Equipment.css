@@ -1,6 +1,11 @@
 
+ 
+    table tbody td,
+    table tbody th {
+      border: 2px solid #ddd;
+    }
 
-    .accordion_card {
+.accordion_card {
     border: 1px solid rgb(204, 204, 204);
     margin: 1rem 0;
     border-radius: 10px;
@@ -61,37 +66,6 @@
         width: 90% !important;
         margin: 0 auto !important;
       }
-
-      .sec {
-        margin-bottom: -60px !important;
-      }
-  
-      .card-width {
-        width: 90% !important;
-        margin: 0 auto !important;
-      }
-
-      .orderr {
-        order: 1;
-        margin-top: -40px !important;
-      }
-  
-      .order {
-        order: 2;
-      }
-
-      .mob-card {
-        margin-bottom: 80px !important;
-      }
-
-      .buttun {
-        width: 50% !important;
-      }
-
-      .mobil {
-        margin-left: 0 !important;
-        max-width: 100% !important;
-      }
    
   }
   
@@ -117,10 +91,6 @@
       width: 70% !important;
       text-align: center;
       margin: 0 auto;
-    }
-
-    .tab {
-      margin-bottom: 100px !important;
     }
   
   }

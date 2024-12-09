@@ -74,6 +74,44 @@
       max-width: 100% !important;
       margin: 0 auto !important;
     }
+
+    h1 {
+      text-align: center !important;
+    }
+  
+    .fs-5 {
+      text-align: center !important;
+      max-width: 80% !important;
+      margin: 0 auto !important;
+    }
+
+    .center {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+
+    .card-width {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+
+    .marginleft {
+      padding-top: 20px !important;
+      margin: 0 auto !important;
+      max-width: 90% !important;
+      
+    }
+
+    .hwidth {
+      margin-top: -20px !important;
+      max-width: 90% !important;
+
+    }
+
+    .widthh .muted {
+      max-width: 100% !important;
+      margin-left: 20px !important;
+    }
   
   }
   
@@ -99,5 +137,31 @@
       margin: 0 auto;
     }
   
-  
   }
+
+  @media (max-width: 768px) {
+    .cards {
+      width: 90% !important;
+    }
+
+    .widt {
+      width: 90% !important;
+    }
+
+    .marg {
+      margin-left: 0 !important;
+    }
+
+    .maxwidth {
+      max-width: 100% !important;
+    }
+
+    .mwidth {
+      max-width: 100% !important;
+    }
+
+    .mwidthh {
+      max-width: 80% !important;
+    }
+  }
+  
