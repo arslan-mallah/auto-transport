@@ -67,6 +67,10 @@
         margin: 0 auto !important;
       }
 
+      .cen {
+        width: 90% !important;
+      }
+
       .no-scroll-table {
         table-layout: fixed !important; 
         width: 100% !important;
@@ -83,6 +87,19 @@
   
     .no-scroll-table thead th {
         font-size: 10px !important; 
+    }
+
+    .buttun {
+      width: 100% !important;
+      margin-bottom: 25px !important;
+    }
+
+    .margin {
+      margin-top: 50px !important;
+    }
+
+    .accordian {
+      max-width: 90% !important;
     }
    
   }
@@ -126,6 +143,12 @@
   .order {
       order: 1; 
   }
+
+  .buttun {
+    margin-bottom: 20px !important;
+  }
+
+  
 
   
   }
