@@ -123,6 +123,21 @@
       text-align: center;
       margin: 0 auto;
     }
+      
+    .box {
+        display: block; 
+        width: 100%; 
+        text-align: center !important;
+  
+    }
+  
+    .orderr {
+        order: 2; 
+    }
+  
+    .order {
+        order: 1; 
+    }
   
   }
  
